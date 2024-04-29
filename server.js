@@ -16,7 +16,7 @@ app.use(
   })
 );
 // { credentials: true, origin: "https://krc-frontend.onrender.com/" }
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 const PORT = process.env.PORT;
 dbConnection();
