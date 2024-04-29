@@ -11,11 +11,12 @@ const app = express();
 app.use(
   cors({
     origin: "https://krc-frontend.onrender.com/",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
   })
 );
+// credentials: true,
+// methods: ["GET", "POST", "PUT", "DELETE"],
+// allowedHeaders: ["Content-Type"],
+
 // { credentials: true, origin: "https://krc-frontend.onrender.com/" }
 // app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
