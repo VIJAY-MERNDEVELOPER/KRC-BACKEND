@@ -11,6 +11,7 @@ const app = express();
 app.use(
   cors({
     origin: "https://krc-frontend.onrender.com/",
+    credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type"],
   })
