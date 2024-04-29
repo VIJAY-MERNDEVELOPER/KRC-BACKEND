@@ -8,7 +8,12 @@ import { recipeRoutes } from "./src/routes/recipe.js";
 dotenv.config();
 const app = express();
 
-app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
+app.use(
+  cors({
+    credentials: true,
+    origin: "https://kitechen-recipe-management.netlify.app/",
+  })
+);
 app.use(express.json());
 const PORT = process.env.PORT;
 dbConnection();
