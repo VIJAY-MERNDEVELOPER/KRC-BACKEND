@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://krc-frontend.onrender.com/",
+    origin: "https://krc-frontend.onrender.com",
   })
 );
 // credentials: true,
