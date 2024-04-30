@@ -8,15 +8,11 @@ import { recipeRoutes } from "./src/routes/recipe.js";
 dotenv.config();
 const app = express();
 
-app.use(
-  cors({
-    origin: "https://krc-frontend.onrender.com/",
-  })
-);
+app.use(cors());
 // credentials: true,
 // methods: ["GET", "POST", "PUT", "DELETE"],
 // allowedHeaders: ["Content-Type"],
-
+// https://kitechen-recipe-management.netlify.app/
 // { credentials: true, origin: "https://krc-frontend.onrender.com/" }
 // app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
