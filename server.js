@@ -9,9 +9,7 @@ dotenv.config();
 const app = express();
 
 app.use(
-  cors({
-    origin: "https://krc-frontend.onrender.com",
-  })
+  cors()
 );
 // credentials: true,
 // methods: ["GET", "POST", "PUT", "DELETE"],
